@@ -1,24 +1,15 @@
-import java.util.Scanner;
-
+import javax.swing.JOptionPane;
 
 class test {
     public static void main(String[] arg){
+        String name = JOptionPane.showInputDialog("What is your name ?");
 
-        Scanner scanner = new Scanner(System.in);
+        int age = Integer.parseInt(JOptionPane.showInputDialog("What is your Age ?"));
 
-        System.out.println("what is your name ?");
-        String name = scanner.nextLine();
+        double height = Double.parseDouble(JOptionPane.showInputDialog("What is your Height ?"));
 
-        System.out.println("How old are you?");
-        int age = scanner.nextInt();
-
-        scanner.nextLine();
-
-        System.out.println("What is your favourite food");
-        String food = scanner.nextLine();
-
-        System.out.println("Hello " + name);
-        System.out.println("You are " + age + " years old");
-        System.out.println("you like " + food);
+        JOptionPane.showMessageDialog(null, "Hello " + name);
+        JOptionPane.showMessageDialog(null, "You are " + age + " years old");
+        JOptionPane.showMessageDialog(null, "You are " + height + " cm tall");
     }
 }
