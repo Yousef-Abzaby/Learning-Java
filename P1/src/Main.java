@@ -1,15 +1,15 @@
-import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 class test {
     public static void main(String[] arg){
-        String name = JOptionPane.showInputDialog("What is your name ?");
 
-        int age = Integer.parseInt(JOptionPane.showInputDialog("What is your Age ?"));
+        ArrayList<String> food = new ArrayList();
+        food.add("Apple");
+        food.add("Banana");
+        food.add("Bread");
 
-        double height = Double.parseDouble(JOptionPane.showInputDialog("What is your Height ?"));
-
-        JOptionPane.showMessageDialog(null, "Hello " + name);
-        JOptionPane.showMessageDialog(null, "You are " + age + " years old");
-        JOptionPane.showMessageDialog(null, "You are " + height + " cm tall");
+        for(int i = 0; i<food.size(); i++){
+            System.out.println(food.get(i));
+        }
     }
 }
