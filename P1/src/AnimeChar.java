@@ -1,11 +1,11 @@
-public class AnimeChar {
+public class AnimeChar extends World{
     String name;
-    static int numberOfChars;
-    AnimeChar(String name) {
+    AnimeChar(String worldName, String name){
+        super(worldName);
         this.name = name;
-        numberOfChars++;
     }
-    static void display() {
-        System.out.println(numberOfChars);
+
+    void display() {
+        System.out.println("This " + name + " is from " + worldName);
     }
 }
