@@ -6,6 +6,6 @@ public class AnimeChar extends World{
     }
 
     void display() {
-        System.out.println("This " + name + " is from " + worldName);
+        System.out.println(name + " is from " + worldName);
     }
 }

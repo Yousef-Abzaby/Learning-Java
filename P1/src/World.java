@@ -6,7 +6,6 @@ public class World {
     }
 
     void display() {
-
         System.out.println("This world is " + worldName);
     }
 }
