@@ -1,16 +1,17 @@
 public class AnimeChar {
 
+    String name;
+    String anime;
+    boolean isMS;
+    int age;
 
-    String name = "Lofi";
-    int age = 18;
-    String title = "Pirate";
-
-
-    void puch() {
-        System.out.println(name + " punched an enemy");
+    AnimeChar(String name, String anime, boolean isMS, int age){
+        this.name = name;
+        this.anime = anime;
+        this.isMS = isMS;
+        this.age = age;
     }
-
-    void eat(String name){
-        System.out.println(name + " is eating");
+    void introduce(){
+        System.out.println("This Character name is " + this.name + " and his/her anime is " + this.anime + " and it is " + this.isMS + " that he is the MS and his age is " + this.age);
     }
 }
